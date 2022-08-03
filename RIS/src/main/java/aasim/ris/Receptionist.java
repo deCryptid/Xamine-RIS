@@ -372,6 +372,8 @@ public class Receptionist extends Stage {
                         }
                         //end validation
                         updateTime(datePicker.getValue().toString() + " " + full, appt.getApptID());
+                        String dropdown = "Appointment Scheduled";
+                        updateStatus(dropdown, appt);
                         x.close();
                     }
 
